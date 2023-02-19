@@ -1,0 +1,47 @@
+// ## Colors
+
+// ### Primary
+
+$Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+//### Neutral
+
+$Light-Grayish-CyanBackground: hsl(180, 52%, 96%);
+$Filter-Tablets: hsl(180, 31%, 95%);
+$Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+$Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+
+/* 
+ Weights: 500, 700 */
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family:'League Spartan',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  padding: 0;
+  
+}
+.app{
+  width: 1440px;
+  background-color:$Light-Grayish-CyanBackground;
+min-height: 100vh;
+&__banner{
+  background-color: $Desaturated-Dark-Cyan;
+  height: 9rem;
+  background-image: url('images/bg-header-desktop.svg');
+  
+  // &__image{
+  //   object-fit: ;
+  // }
+}
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+

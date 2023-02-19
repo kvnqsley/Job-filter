@@ -1,0 +1,200 @@
+/* 
+ Weights: 500, 700 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  padding: 0;
+}
+
+.app {
+  width: 1440px;
+  background-color: hsl(180deg, 52%, 96%);
+  min-height: 100vh;
+}
+.app__banner {
+  background-color: hsl(180deg, 29%, 50%);
+  height: 9rem;
+  background-image: url("images/bg-header-desktop.svg");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.filterbox__list {
+  width: calc(100% - 14rem);
+  margin: -2rem 0 0 7rem;
+  height: 4rem;
+  background-color: white;
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  border-radius: 0.4rem;
+}
+.filterbox__list--active {
+  display: none;
+}
+.filterbox__list__item {
+  align-items: center;
+  margin: auto 0;
+  background-color: hsl(180deg, 31%, 95%);
+  padding: 0.5rem;
+  position: relative;
+  color: hsl(180deg, 29%, 50%);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 0.3rem;
+}
+.filterbox__list__item__close {
+  display: inline;
+  background-color: hsl(180deg, 29%, 50%);
+  padding: 0.5rem;
+  position: absolute;
+  right: -1.5rem;
+  top: 0;
+  color: hsl(180deg, 31%, 95%);
+  border-radius: 0 0.3rem 0 0;
+}
+.filterbox__list__item__close:hover {
+  background-color: hsl(180deg, 14%, 20%);
+}
+.filterbox__list__text {
+  flex-grow: 1;
+  margin: auto 0;
+  padding-right: 4rem;
+  text-align: right;
+  color: hsl(180deg, 29%, 50%);
+  font-weight: 600;
+}
+.filterbox__list__text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container {
+  list-style: none;
+  overflow: hidden;
+  height: 100%;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  width: calc(100% - 6rem);
+}
+.container__img {
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem 0 0 4rem;
+}
+.container__item {
+  display: flex;
+  height: 9rem;
+  background-color: white;
+  width: calc(100% - 6rem);
+  position: relative;
+  margin-left: 3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding-top: 0.5rem;
+  border-style: solid;
+  border-width: 0 0 0 0.5rem;
+  border-color: transparent transparent transparent hsl(180deg, 29%, 50%);
+}
+.container__item__wrapper1 {
+  min-width: 20%;
+  flex-grow: 1;
+  margin: 1rem 0 0 1rem;
+}
+.container__item__wrapper1__header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+.container__item__wrapper1__header__text {
+  font-weight: 500;
+  height: 1.4rem;
+  padding: 0rem 0.6rem;
+  line-height: 1.6rem;
+  margin-top: 0;
+  font-size: 0.9rem;
+}
+.container__item__wrapper1__header__text:first-child {
+  color: hsl(180deg, 29%, 50%);
+  padding-left: 0;
+  font-weight: 900;
+}
+.container__item__wrapper1__header__text:nth-child(2) {
+  color: hsl(180deg, 52%, 96%);
+  background-color: hsl(180deg, 29%, 50%);
+  margin-top: 0rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+.container__item__wrapper1__header__text:nth-child(3) {
+  text-transform: uppercase;
+  border-radius: 9rem;
+  background-color: hsl(180deg, 14%, 20%);
+  color: hsl(180deg, 52%, 96%);
+}
+.container__item__wrapper1__subtext {
+  color: hsl(180deg, 14%, 20%);
+  font-weight: 900;
+  font-size: 1.5rem;
+  max-width: 17rem;
+  margin: 0.3rem 0 0 0;
+}
+.container__item__wrapper1__subtext:hover {
+  color: hsl(180deg, 29%, 50%);
+  cursor: pointer;
+}
+.container__item__wrapper1__list {
+  display: inline;
+  margin-right: 3rem;
+  color: hsl(180deg, 8%, 52%);
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 30em;
+  width: 100%;
+}
+.container__item__wrapper1__list--marker::before {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  border: 1px solid hsl(180deg, 8%, 52%);
+  background-color: hsl(180deg, 8%, 52%);
+  left: -1.5rem;
+  border-radius: 50%;
+  top: 40%;
+}
+.container__item__wrapper2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin-right: 3rem;
+  color: hsl(180deg, 29%, 50%);
+}
+.container__item__wrapper2__item {
+  background-color: hsl(180deg, 31%, 95%);
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+}
+.container__item__wrapper2__item:hover {
+  background-color: hsl(180deg, 29%, 50%);
+  color: hsl(180deg, 31%, 95%);
+  padding-right: 0;
+}
+
+#container {
+  margin-top: 1rem;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,210 @@
+@import 'index.scss';
+
+.filterbox__list{
+     width: calc(100% - 14rem);
+    margin:-2rem 0 0 7rem;
+    height: 4rem;
+    background-color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    border-radius: .4rem;
+    
+
+        &--active{
+            display: none;
+        }
+
+        &__item{
+        align-items: center;
+        margin: auto 0;
+        background-color: $Filter-Tablets;
+        padding: .5rem;
+        position: relative;
+        color: $Desaturated-Dark-Cyan;
+        cursor:pointer;
+        font-weight: 600;
+        border-radius: .3rem;
+
+        &__close{
+            display: inline;
+            background-color: $Desaturated-Dark-Cyan;
+            padding: .5rem;
+            position: absolute;
+            right: -1.5rem;
+            top:0;
+            color: $Filter-Tablets;
+            border-radius:0 .3rem 0 0;
+        }
+
+        &__close:hover{
+            background-color: $Very-Dark-Grayish-Cyan;
+        }
+
+    }
+    &__text{
+  flex-grow: 1;
+  margin: auto 0;
+ padding-right: 4rem;
+  text-align: right;
+  color: $Desaturated-Dark-Cyan;
+  font-weight: 600;
+    }
+
+    &__text:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.container{
+    list-style: none;
+ overflow: hidden;
+height: 100%;
+margin-top: 5rem;
+margin-left: 2rem;
+
+width: calc(100% - 6rem);
+
+&__img{
+    width: 6rem;
+    height: 6rem;
+    margin:1rem 0 0 4rem;
+}
+
+    &__item{
+        display: flex;
+        height: 9rem;
+        background-color: white;
+        width: calc(100% - 6rem);
+        position: relative;
+        margin-left: 3rem;
+        border-radius:.5rem ;
+        margin-bottom: 2rem;
+        padding-top: .5rem;
+        border-style: solid;
+        border-width: 0 0 0 .5rem;
+        border-color:transparent transparent transparent $Desaturated-Dark-Cyan;
+
+
+
+            &__wrapper1{
+            min-width: 20%;
+            flex-grow: 1;
+            margin: 1rem 0 0 1rem;
+
+        &__header{
+            display: flex;
+            justify-content: flex-start;
+            gap: .4rem;
+        
+
+            &__text{
+                font-weight: 500;
+                height: 1.4rem;
+                padding: 0rem .6rem;
+                line-height: 1.6rem;
+                margin-top: 0;
+                font-size: .9rem;
+            }
+
+            &__text:first-child{
+                color: $Desaturated-Dark-Cyan;
+                padding-left: 0;
+                font-weight: 900;
+            }
+
+            &__text:nth-child(2){
+                color: $Light-Grayish-CyanBackground;
+                background-color: $Desaturated-Dark-Cyan;
+        
+                margin-top: 0rem;
+                border-radius: 2rem;
+                text-transform: uppercase;
+            }
+
+            &__text:nth-child(3){
+                text-transform: uppercase;
+                border-radius: 9rem;
+                background-color: $Very-Dark-Grayish-Cyan;
+                color: $Light-Grayish-CyanBackground;
+            }
+
+        
+
+
+        }
+
+        &__subtext{
+            color: $Very-Dark-Grayish-Cyan;
+            font-weight: 900;
+            font-size: 1.5rem;
+            max-width: 17rem;
+            margin: .3rem 0 0 0;
+        }
+
+        &__subtext:hover{
+            color: $Desaturated-Dark-Cyan;
+            cursor: pointer;
+        }
+
+        &__list{
+            display: inline;
+            margin-right: 3rem;
+            color: $Dark-Grayish-Cyan;
+            position: relative;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-top: 30em;
+        width: 100%;
+
+
+        &--marker::before{
+            content: '';
+            position: absolute;
+            width: .2rem;
+            height: .2rem;
+            border: 1px solid $Dark-Grayish-Cyan;
+            background-color: $Dark-Grayish-Cyan;
+            left: -1.5rem;
+            border-radius: 50%;
+            top: 40%;
+        }
+}
+
+
+
+
+    }
+
+    &__wrapper2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+        margin-right: 3rem;
+        color: $Desaturated-Dark-Cyan;
+
+        &__item{
+            background-color: $Filter-Tablets;
+            cursor:pointer;
+            font-weight: 600;
+            padding: .4rem;
+            border-radius: .2rem;
+        }
+
+        &__item:hover{
+            background-color: $Desaturated-Dark-Cyan;
+            color: $Filter-Tablets;
+            padding-right: 0;
+        }
+       
+    }
+
+    }
+
+}
+
+#container{
+    margin-top: 1rem;
+}
