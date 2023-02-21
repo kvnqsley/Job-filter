@@ -59,8 +59,9 @@ code {
   position: absolute;
   right: -1.5rem;
   top: 0;
+  height: 100%;
   color: hsl(180deg, 31%, 95%);
-  border-radius: 0 0.3rem 0 0;
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 .filterbox__list__item__close:hover {
   background-color: hsl(180deg, 14%, 20%);
@@ -145,7 +146,7 @@ code {
   color: hsl(180deg, 14%, 20%);
   font-weight: 900;
   font-size: 1.5rem;
-  max-width: 17rem;
+  min-width: 16rem;
   margin: 0.3rem 0 0 0;
 }
 .container__item__wrapper1__subtext:hover {
