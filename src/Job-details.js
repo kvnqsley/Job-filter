@@ -14,7 +14,7 @@ const JobDetails =({list,
  
     return(
      <>
-     
+     <div className="container__item__wrapper2__border"></div>
       <ul  
       className='container__item__wrapper2'>
     <li ref={btnref}

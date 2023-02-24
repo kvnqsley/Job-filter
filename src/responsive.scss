@@ -1,0 +1,92 @@
+@use 'index.scss';
+
+
+@media screen and (max-width:600px) {
+   
+    .app{
+        width: 375px;
+      margin-right: 0;
+      min-height: 100vh;
+
+
+      &__banner{
+          background-position: right;
+      }
+    }
+
+    .container{
+width: 100%;
+margin-left: 0;
+margin-top: 0;
+padding-left: 0;
+padding-top: 4rem;
+
+
+
+        &__item{
+          height: 19.5rem;
+            margin: 0 0 5rem 2rem;
+width: calc(100% - 4rem);
+flex-direction: column;
+
+
+        &__wrapper1{
+        height: 4rem;
+        flex-grow: 0;
+
+&__header{
+    margin-top: -3rem;
+}
+
+        &__list{
+         margin-right: 1.5rem;
+      
+
+         
+        &--marker::before{
+            left: -1rem;
+
+        }
+
+    }
+        }
+
+        &__wrapper2{
+            flex-wrap: wrap;
+            justify-content: start;
+            width: 100%;
+            margin-top: 4rem;
+            margin-left: -1.5rem;
+            gap: 1rem;
+
+            &__border{
+                height: calc(.1rem / 2);
+                margin-left: 1.2rem;
+                position: relative;
+                top: 3rem;
+                background-color: index.$Dark-Grayish-Cyan;
+            width: calc(100% - 2.4rem);
+            }
+        }
+        }
+
+        &__img{
+            position: relative;
+            top: -3rem;
+            margin: 0;
+            left: 1rem;
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+ .filterbox__list{
+     margin-left: 2rem;
+width: calc(100% - 4rem);
+flex-wrap: wrap;
+min-height: 7rem;
+row-gap: 0rem;
+padding-left: 1rem;
+    
+ }
+}

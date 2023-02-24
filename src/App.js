@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
+import './responsive.scss'
 import React from 'react';
 import defaultdata from './data.json';
 import JobDetails from './Job-details';
@@ -212,7 +213,7 @@ const filteredContent=e.target.textContent;
        {data.map(el=>
          <li 
          key={el.id} 
-         className={`container__item ${filterRole=='Frontend' ?'container__item--'+el.role:null}` }>
+         className={`container__item ` }>
            <Job
            list={el}
             filterRole={filterRole}

@@ -21,7 +21,7 @@ body {
 .app__banner {
   background-color: hsl(180deg, 29%, 50%);
   height: 9rem;
-  background-image: url("images/bg-header-desktop.svg");
+  background-image: url("./images/bg-header-desktop.svg");
 }
 
 code {
