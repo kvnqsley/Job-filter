@@ -1,16 +1,18 @@
 import React from "react";
-const Filter=(props)=>{
-    const clearHandler=props.clearHandler
-  const className=props.isVisible;
-    const selectedRole=props.selectedRole;
-    const filterRole = props.filterRole
-    const filterLevel = props.filterLevel
-   const filterbarstatus=props.filterbarstatus
+const Filter=({clearHandler,
+  filterRole,
+  filterLevel,
+  filterbarstatus,
+  filterLanguage,
+  filterTool,
+}
+)=>{
     return( <div className='filterbox'>
     <ul className={`filterbox__list  ${filterbarstatus ? null : 'filterbox__list--active'}`} >
-      {filterRole}
+       {filterRole} 
       {filterLevel}
-     
+      {filterLanguage}
+     {filterTool}
       <p className='filterbox__list__text ' onClick={clearHandler}>Clear</p>
     </ul>
     </div>)

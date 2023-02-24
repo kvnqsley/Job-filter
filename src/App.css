@@ -106,6 +106,9 @@ code {
   border-width: 0 0 0 0.5rem;
   border-color: transparent transparent transparent hsl(180deg, 29%, 50%);
 }
+.container__item--Frontend {
+  display: none;
+}
 .container__item__wrapper1 {
   min-width: 20%;
   flex-grow: 1;
