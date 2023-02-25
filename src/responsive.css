@@ -57,6 +57,9 @@ code {
   .container__item__wrapper1__header {
     margin-top: -3rem;
   }
+  .container__item__wrapper1__subtext {
+    padding: 1rem 0;
+  }
   .container__item__wrapper1__list {
     margin-right: 1.5rem;
   }

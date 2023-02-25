@@ -1,5 +1,6 @@
 import React from "react";
 const Filter=({clearHandler,
+  filterPosition,
   filterRole,
   filterLevel,
   filterbarstatus,
@@ -9,6 +10,7 @@ const Filter=({clearHandler,
 )=>{
     return( <div className='filterbox'>
     <ul className={`filterbox__list  ${filterbarstatus ? null : 'filterbox__list--active'}`} >
+       {filterPosition}
        {filterRole} 
       {filterLevel}
       {filterLanguage}

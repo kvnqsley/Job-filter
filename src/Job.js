@@ -2,7 +2,7 @@ import React from "react";
 import data from './data.json'
 import { useRef } from 'react'
 import { useEffect } from "react";
-const Job=({list,filterRole})=>{
+const Job=({list,positionHandler})=>{
   
      return<>  <img 
        className='container__img' 
@@ -28,7 +28,7 @@ const Job=({list,filterRole})=>{
       <p 
       className='container__item__wrapper1__header__text'>FEATURED</p>}
      </div>
-     <p 
+     <p onClick={positionHandler}
      className='container__item__wrapper1__subtext'>
        {list.position}</p>
      

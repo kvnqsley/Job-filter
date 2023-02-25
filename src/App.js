@@ -7,16 +7,16 @@ import JobDetails from './Job-details';
 import Job from './Job';
 import Filter from './Filter';
 import Header from './Header';
-import {useRef} from 'react';
-import { useEffect} from 'react';
+
 
 function App() {
-const listref=useRef('')
+
 const [data, setdata]=React.useState(defaultdata)
 
   const [filterbarstatus,setfilterbarstatus]=React.useState(false);
   const [filterRole,setFilterRole]= React.useState(null);
   const [filterLanguage,setFilterLanguage]= React.useState(null);
+  const [filterPosition,setFilterPosition]= React.useState(null);
   const [filterTool,setFilterTool]= React.useState(null);
   
   const [filterLevel,setFilterLevel]= React.useState(null);
@@ -25,6 +25,51 @@ const [data, setdata]=React.useState(defaultdata)
 ---------------------ALL HANDLERS-----------------
 
  */
+const positionHandler=(e)=>{
+setfilterbarstatus(true);
+const filteredContent = e.target.textContent;
+setFilterPosition(
+  <li 
+  className='filterbox__list__item'>
+   {filteredContent}
+    
+    <div key='btn1'
+    className='filterbox__list__item__close'
+    onClick={clearPositionHandler}
+  ><img src='./images/icon-remove.svg'/>
+    </div>
+
+    </li>
+ );
+ switch (e.target.textContent) {
+   case 'Senior Frontend Developer':
+    setdata(data.filter(item=>item.position=='Senior Frontend Developer'))
+     break;
+   case 'Fullstack Developer':
+    setdata(data.filter(item=>item.position=='Fullstack Developer'))
+     break;
+   case 'Junior Frontend Developer':
+    setdata(data.filter(item=>item.position=='Junior Frontend Developer'))
+     break;
+   case 'Software Engineer':
+    setdata(data.filter(item=>item.position=='Software Engineer'))
+     break;
+   case 'Junior Backend Developer':
+    setdata(data.filter(item=>item.position=='Junior Backend Developer'))
+     break;
+   case 'Junior Developer':
+    setdata(data.filter(item=>item.position=='Junior Developer'))
+     break;
+   case 'Full Stack Engineer':
+    setdata(data.filter(item=>item.position=='Full Stack Engineer'))
+     break;
+   case 'Front-end Dev':
+    setdata(data.filter(item=>item.position=='Front-end Dev'))
+     break;
+ 
+   
+ }
+}
   const selectedRoleHandler=(e)=>{
     setfilterbarstatus(true);
    const filteredContent=e.target.textContent;
@@ -167,6 +212,7 @@ const filteredContent=e.target.textContent;
   const clearHandler=()=>{
   setfilterbarstatus(false);
  setFilterRole(null);
+ setFilterPosition(null);
  setdata(defaultdata)
   setFilterLevel(null);
   setFilterLanguage(null);
@@ -175,13 +221,17 @@ const filteredContent=e.target.textContent;
   }
   
 
+  const clearPositionHandler=()=>{
+    setFilterPosition(null);
+    setdata(defaultdata)
+     }
   const clearRoleHandler=()=>{
    setFilterRole(null);
    setdata(defaultdata)
     }
  const clearLevelHandler=()=>{
       setFilterLevel(null);
-    
+      setdata(defaultdata)
       }
   const clearLanguageHandler=()=>{
     setFilterLanguage(null);
@@ -200,6 +250,7 @@ const filteredContent=e.target.textContent;
     className='app'>
     <Header/>
     <Filter clearHandler={clearHandler}
+    filterPosition={filterPosition}
      filterbarstatus={filterbarstatus} 
      filterRole={filterRole}
       filterLevel={filterLevel}
@@ -217,7 +268,8 @@ const filteredContent=e.target.textContent;
            <Job
            list={el}
             filterRole={filterRole}
-            filtebarstatus={filterbarstatus}/>
+            filtebarstatus={filterbarstatus}
+            positionHandler={positionHandler}/>
            <JobDetails 
            selectedRoleHandler={selectedRoleHandler}
            selectedLevelHandler={selectedLevelHandler}
