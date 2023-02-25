@@ -33,7 +33,7 @@ const Job=({list,filterRole})=>{
        {list.position}</p>
      
       <div 
-      id='container'>
+      className='containerdiv'>
       <p 
       className='container__item__wrapper1__list'>{list.postedAt}</p>
        <p 
