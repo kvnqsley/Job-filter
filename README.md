@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/job-filter-page-using-react-80O4NCU3Tk)
+- Live Site URL: [Live site link](https://job-filter-by-kvnqsley.netlify.app/)
 
 ## My process
 
@@ -57,8 +57,8 @@ React router
 
 ### Useful resources
 
-- [Example resource 1](https://www.freecodecamp.org) - This helped me to understand how to lift states. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.reactjs.org) - This is an amazing doc which helped me finally understand the react hooks. I'd recommend it to anyone still learning this concept.
+- [Resource 1](https://www.freecodecamp.org) - This helped me to understand how to lift states. I really liked this pattern and will use it going forward.
+- [Resource 2](https://www.reactjs.org) - This is an amazing doc which helped me finally understand the react hooks. I'd recommend it to anyone still learning this concept.
 
 
 ## Author
