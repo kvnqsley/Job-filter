@@ -27,6 +27,7 @@ const [data, setdata]=React.useState(defaultdata)
  */
 const positionHandler=(e)=>{
 setfilterbarstatus(true);
+window.scrollTo(0,0);
 const filteredContent = e.target.textContent;
 setFilterPosition(
   <li 
@@ -72,6 +73,7 @@ setFilterPosition(
 }
   const selectedRoleHandler=(e)=>{
     setfilterbarstatus(true);
+    window.scrollTo(0,0);
    const filteredContent=e.target.textContent;
    setFilterRole(
     <li 
@@ -105,6 +107,7 @@ setFilterPosition(
 
   const selectedLevelHandler=(e)=>{
     setfilterbarstatus(true);
+    window.scrollTo(0,0);
 const filteredContent=e.target.textContent;
    setFilterLevel( <li
     className='filterbox__list__item'>
@@ -134,6 +137,7 @@ const filteredContent=e.target.textContent;
 
   const selectedLanguageHandler=(e)=>{
     setfilterbarstatus(true);
+    window.scrollTo(0,0);
    const filteredContent=e.target.textContent;
    setFilterLanguage(
     <li 
@@ -168,6 +172,7 @@ const filteredContent=e.target.textContent;
   
    const selectedToolHandler=(e)=>{
     setfilterbarstatus(true);
+    window.scrollTo(0,0);
    const filteredContent=e.target.textContent;
    setFilterTool(
     <li 

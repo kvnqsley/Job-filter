@@ -91,6 +91,11 @@ flex-wrap: wrap;
 min-height: 7rem;
 row-gap: 0rem;
 padding-left: 1rem;
+
+&__text{
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+}
     
  }
 }

@@ -98,4 +98,8 @@ code {
     row-gap: 0rem;
     padding-left: 1rem;
   }
+  .filterbox__list__text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }/*# sourceMappingURL=responsive.css.map */
